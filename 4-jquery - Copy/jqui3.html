@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>jQuery</title>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+    <style type="text/css">
+        #resizable {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        #box1 {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+
+        }
+
+        #box2 {
+            background-color: rgb(255, 0, 234);
+            width: 100px;
+            height: 100px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="draggable">Drag me!</div>
+
+    <div style="width: 400px; height: 300px; background-color: aqua;">
+
+        <span>I,m stuck in the box!</span>
+    </div>
+
+    <div id="box1">
+        <h1>box1</h1>
+
+    </div>
+
+    <div id="box2">
+        <h1>box2</h1>
+
+    </div>
+
+    <script type="text/javascript">
+
+        $("#draggable").draggable({ axis: "x" });
+
+        $("span").draggable({ containment: "parent" })
+
+        $("#box1").resizable({
+            grid: 50,
+            alsoResize: "#box2",
+            resize: function (event,ui) {
+
+               if ($("#box1").width() > 300){
+                    
+                    alert("big enough!");
+                }
+
+            }
+        });
+
+        $("#box2").resizable({
+            alsoResize: "#box1",
+            resize: function (event,ui) {
+
+               if ($("#box2").width() > 300){
+                    
+                    alert("big enough!");
+                }
+
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>

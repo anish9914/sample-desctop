@@ -1,0 +1,40 @@
+
+    #circle0{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: green;
+        margin: 10px;
+    }
+
+    #circle1{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: red;
+        margin: 10px;
+    }
+
+    #circle2{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+     background-color:blue;
+      margin: 10px;
+    }
+
+    #circle3{
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     background-color:yellow;
+     margin: 10px;
+    }
+
+    #circle4{
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     background-color:purple;
+     margin: 10px;
+    }

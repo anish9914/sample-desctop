@@ -1,0 +1,201 @@
+
+<html>
+    <head>
+    
+        <title>Javascript</title>
+         
+        <style type="text/css">
+
+        .circle {
+         
+            width: 200px;
+            height: 200px;
+            border-radius:50% ;
+            float: left;
+            margin: 50px;
+
+        }
+
+        
+        #red-circle {
+
+            background-color: red;
+        }
+
+        #blue-circle{
+
+            background-color: blue;
+        }
+
+        #yellow-circle{
+
+            background-color: yellow;
+        }
+
+
+        </style>
+    </head>
+    <body>
+    <!-- 
+        <button onclick="alert('Hlo')">Click Me</button>
+    
+        <script type="text/javascript">
+    
+            alert('Page Is Loaded!');
+    
+        </script> -->
+    <!-- 
+        <hr>
+    
+        <p id="text">Hello World</p>
+    
+        <script type="text/javascript">
+    
+             // This is a one line comment
+             //document.getElementById("text").innerHTML = "Test line comment.....";
+    
+             /* This is mullti line comment */
+    
+             /* helo 
+             good morning   */
+    
+           document.getElementById("text").innerHTML = "Helloo"; 
+                 
+            
+        </script> -->
+    
+        <hr>
+       
+        
+         <!-- <p id="text">Good morning</p>
+    
+        <button id="MyButton">Change text</button>  
+       
+        <script type="text/javascript">
+           
+           document.getElementById("MyButton").onclick = function(){
+            document.getElementById("text").innerHTML= "New Changed text, after you clicked button";
+    
+           // alert("Button clicked")
+    
+           }
+    
+        </script> -->
+
+    
+        <!-- <p id="text1">Good morning</p>
+        <button id="Button1">Change text1</button>  
+
+       
+        <p id = "text2">Very Good Morning.......</p>
+        <button id = "Button2">Change text2</button>
+   
+
+         <p id = "text3"> javascript.......</p> 
+        <button id = "Button3">Change text3</button>
+
+        <p id = "text4"> </p> 
+        <button id = "Button4">click for new </button>
+
+        <p id = "text5">this is for styling </p> 
+        <button id = "Button5">click for styling</button>
+
+        <p id = "text6">this is for colouring </p> 
+        <button id = "Button6">click for colouring</button>
+
+        <p id = "text7">this is for disappear </p> 
+        <button id = "Button7">click for disappear message</button>
+
+
+        <script type="text/javascript">
+            //change text from good morning to good afternoan
+           
+           document.getElementById("Button1").onclick = function(){
+
+            document.getElementById("text1").innerHTML = "good aftternoon";
+            
+           }
+           
+           //same as aboue..... to good evening
+           document.getElementById("Button2").onclick = function(){
+
+            document.getElementById("text2").innerHTML = "good evening";
+
+         }
+           //modify text
+           document.getElementById("Button3").onclick = function(){
+
+            document.getElementById("text3").innerHTML = "I think ...." +document.getElementById("text3").innerHTML + "... is awesome";
+
+          }
+          
+          // new text appears
+          document.getElementById("Button4").onclick = function(){
+
+         document.getElementById("text4").innerHTML = "<h1>New Paragraph</h1>";
+
+          }
+
+          //fontsize styling
+
+          document.getElementById("Button5").onclick = function(){
+
+          document.getElementById("text5").style.fontSize= "50px";
+         } 
+
+         //styli coloring red
+
+            document.getElementById("Button6").onclick = function(){    
+             document.getElementById("text6").style.color= "red";
+
+          }
+
+          //text disappear
+
+          document.getElementById("Button7").onclick = function(){    
+             document.getElementById("text7").style.display= "none";
+
+          }
+
+        </script> 
+         -->
+        
+        <hr>
+
+       <div class="circle" id="red-circle"></div>
+
+       <div class="circle" id="blue-circle"></div>
+
+       <div class="circle" id="yellow-circle"></div>
+
+        <script type="text/javascript">
+
+         
+
+     document.getElementById("red-circle").onclick = function(){
+
+        document.getElementById("red-circle").style.display = "none";
+        
+     }
+
+
+
+     document.getElementById("blue-circle").onclick = function(){
+
+      document.getElementById("blue-circle").style.display = "none";
+
+      }
+
+       document.getElementById("yellow-circle").onclick = function(){
+
+      document.getElementById("yellow-circle").style.display = "none";
+
+      }
+
+
+
+        </script>
+
+    </body>
+    </html>
+    

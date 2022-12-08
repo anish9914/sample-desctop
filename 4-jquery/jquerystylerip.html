@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>jQuery</title>
+
+    <!-- google Link -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>  -->
+
+    <script type ="text/javascript" src="jquery.min.js"></script> 
+    <style>
+        html,
+        body{
+            height: 100%;
+        }
+        #circle{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: green;
+            margin: 10px;
+        }
+
+    </style>
+    
+ </head>
+
+<body>
+
+    <div id="circle"></div>
+    <script type="text/javascript">
+      $("#circle").click(function(){
+       
+    //    alert($("#circle").css("background-color"));
+           // document.write ("Height of the circle =" + $("body").css("height"));
+         //   document.write("<br>");
+         //   document.write ("Width of the circle =" + $("body").css("width"));
+         
+      var h =  $("body").css("height");
+      var w =   $("body").css("width");
+
+      document.write("height = "+ h + "<br>" + "width = "+ w  );         
+      });
+                
+    </script>
+    
+</body>
+</html>

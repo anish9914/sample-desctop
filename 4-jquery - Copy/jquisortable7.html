@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+   
+</head>
+<body>
+    <p>Date: <input type="text" id="datepicker"></p>
+
+    <div class="ui-widget">
+        <label for="tags">Tags: </label>
+        <input id="tags">
+      </div>
+
+      <div id="progressbar"></div>
+      
+   <script type="text/javascript">
+
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
+  $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+
+  $( function() {
+    $( "#progressbar" ).progressbar({
+      value: 50
+    });
+  } );
+
+    </script>
+    
+</body>
+</html>

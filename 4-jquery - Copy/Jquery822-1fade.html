@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery1</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style type="text/css">
+        #circle1{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgb(105, 219, 219);
+            margin: 10px;
+            padding: 50px 0px 0px 50px;
+            font-size: 40px;
+        }
+        #circle2{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgb(81, 101, 101);
+            margin: 10px;
+            padding: 50px 0px 0px 50px;
+            font-size: 40px;
+        }
+        #circle3{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgb(79, 202, 100);
+            margin: 10px;
+            padding: 50px 0px 0px 50px;
+            font-size: 40px;
+        }
+        #circle4{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgb(189, 72, 101);
+            margin: 10px;
+            padding: 50px 0px 0px 50px;
+            font-size: 40px;
+            
+        }
+        #circle5{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgb(222, 222, 65);
+            margin: 10px;
+            padding: 50px 0px 0px 50px;
+            font-size: 40px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+       
+    <!-- <div id="circle1">1</div>
+    <div id="circle2">2</div>
+    <div id="circle3">3</div>
+    <div id="circle4">4</div>
+    <div id="circle5">5</div> -->
+
+
+    <!-- <p>faiding is finished</p>
+    <button id="fadeOut">fadeOut</button> -->
+    <p id="text">this text will by  hidden initially.</p>
+    <button id="btn">toggle</button>
+
+   <script type="text/javascript">
+
+ $("#btn").click(function(){
+    if($("#text").css("display")=="none"){
+        $("#text").fadeIn();
+    }
+    else{
+        $("#text").fadeOut();
+    }
+    
+ });
+
+ 
+    //  $("#fadeOut").click(function(){
+    // $("p").fadeOut()});
+
+//     $("div").click(function(){
+
+//      $(this).hide(1000,)
+
+//     });
+
+//     $("div").click(function(){
+
+// $(this).show(1000)
+
+// });
+
+
+// $("div").click(function(){
+
+// $(this).fadeOut(1000,)
+
+// });
+
+// $("div").click(function(){
+
+// $(this).fadeIn(1000)
+
+// });
+
+// $("div").click(function(){
+// $(this).hide(1000,)
+// alert("i am pro 🤣");
+// });
+
+// $("div").click(function(){
+// $(this).show(1000)
+// alert("i am pro 🤣");
+// });
+
+       </script>
+    
+</body>
+</html>
